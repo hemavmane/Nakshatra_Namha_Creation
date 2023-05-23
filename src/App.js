@@ -5,7 +5,7 @@ import Home from './Component/Home'
 import Banner from "./Component/Banner";
 import Payment from "./Component/Payment";
 import Services from "./Component/Services";
-import Vendores from "./Component/Vendores";
+import Vendores from "./Component/Vendors";
 import Categorey from "./Component/Categorey";
 import Voucher from "./Component/Voucher";
 import Review from "./Component/Review";
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Category" element={<Categorey />} />
         <Route path="/Services" element={<Services />} />
         <Route path="/Voucher" element={<Voucher />} />
-        <Route path="/Review" element={<Review />} />
+        <Route path="/Reviews" element={<Review />} />
         <Route path="/Exclusive" element={<Exclusive />} />
         <Route path="/Setting" element={<Setting />} />
         <Route path="/Logout" element={<Logout />} />

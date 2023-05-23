@@ -2,7 +2,7 @@ import React from 'react'
 import { SideBar } from "./Sidebar";
 import { NavBar } from "./Navbar";
 
-export default function Voucher() {
+export default function Category() {
   return (
     <div className="row Header_container">
     <div className="col-md-2 sidebar_container">

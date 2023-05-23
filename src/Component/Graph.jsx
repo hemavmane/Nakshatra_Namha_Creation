@@ -9,31 +9,27 @@ import {
   Tooltip,
   Area,
   Legend,
-
 } from "recharts";
 
 export const GraphComponent = () => {
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://disease.sh/v3/covid-19/countries`).then(response => {
+    axios.get(`https://disease.sh/v3/covid-19/countries`).then((response) => {
       setCountries([...response.data]);
     });
   }, []);
 
   return (
     <>
-      
-
-
-<AreaChart 
+      <AreaChart
         width={600}
         height={400}
         data={countries}
         margin={{ top: 10, right: 60, left: 0, bottom: 0 }}
       >
-        <XAxis stroke="white" dataKey="country" />
-        <YAxis stroke="white" width={90} allowDataOverflow="true" />
+        <XAxis dataKey="country" />
+        <YAxis width={90} allowDataOverflow="true" />
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
         <Legend />
@@ -53,8 +49,6 @@ export const GraphComponent = () => {
           fill="#bfdbf7"
         />
       </AreaChart>
-
-   
     </>
   );
 };

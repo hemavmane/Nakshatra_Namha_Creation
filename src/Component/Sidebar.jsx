@@ -6,8 +6,8 @@ export function SideBar() {
   return (
     <>
       <section>
-        <div style={{ display: "flex", height: "100%" }}>
-          <Sidebar>
+        <div style={{ display: "flex",  height: "100%" }}>
+          <Sidebar >
             <Menu>
               <MenuItem>
               <a className="links_for_products" href="/DashboardComponent">Dashboard</a></MenuItem>
@@ -18,26 +18,26 @@ export function SideBar() {
                 <a  className="links_for_products" href="/Payment">Payment and Reports</a>{" "}
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Vendors use management">Vendors use management</a>{" "}
+                <a  className="links_for_products" href="/Vendores">Vendors use management</a>{" "}
               </MenuItem>
               <MenuItem>
                 {" "}
                 <a  className="links_for_products" href="/Category">Category</a>
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Servies">Services</a>
+                <a  className="links_for_products" href="/Services">Services</a>
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Voucher and Discount">Voucher and Discount</a>
+                <a  className="links_for_products" href="/Voucher">Voucher and Discount</a>
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Review Management">Review Management</a>
+                <a  className="links_for_products" href="/Reviews">Review Management</a>
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Exclusive Store">Exclusive Store</a>
+                <a  className="links_for_products" href="/Exclusive">Exclusive Store</a>
               </MenuItem>
               <MenuItem>
-                <a  className="links_for_products" href="/Settings">Settings</a>
+                <a  className="links_for_products" href="/Setting">Settings</a>
               </MenuItem>
               <MenuItem>
                 <a  className="links_for_products" href="/Logout">Logout</a>
