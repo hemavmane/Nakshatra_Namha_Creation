@@ -18,6 +18,9 @@ export function SideBar() {
                 <a  className="links_for_products" href="/Payment">Payment and Reports</a>{" "}
               </MenuItem>
               <MenuItem>
+                <a  className="links_for_products" href="/Products">Products</a>{" "}
+              </MenuItem>
+              <MenuItem>
                 <a  className="links_for_products" href="/Vendores">Vendors use management</a>{" "}
               </MenuItem>
               <MenuItem>

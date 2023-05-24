@@ -1,125 +1,43 @@
- .css-1wvake5 {
+.header_logo {
+  width: 100px;
+  height: 40px;
+}
+
+.bg-header {
+  background-color: red;
+  padding: 10px;
+}
+
+.css-1wvake5 {
   position: relative;
   min-width: 40px !important;
   height: 100vh;
   border: none !important;
   width: 360px !important;
   min-width: 313px !important;
-  color:black !important;
+  color: black !important;
+}
+.css-16jkw2k > .ps-menu-button:hover {
+  color: black !important;
 }
 
 .css-dip3t8 {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 3;
-  background-color: #0085ff !important;
-} 
-
-.bg-header {
-  background-color: red;
-  padding: 10px;
+  background-color: rgb(14, 134, 247) !important;
 }
-.header_logo {
-  width: 100px;
-  height: 40px;
-}
-
-
 .links_for_products {
   text-decoration: none;
   color: white;
 }
 
-.banner_img {
-  width: 70px;
-  height: 70px;
-}
-
-.dashboard_body,
-.form_header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.dasboard_container {
-
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.952);
-}
-
-
-
-.banner_container {
-  margin: 40px;
-}
-.card_container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  text-align: center;
-  height: fit-content;
-}
-.cards {
-  width: 250px;
-  height: 150px !important;
-  border: none !important;
-}
-
-.graph {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.g_heading {
-  margin-left: 120px;
-}
-
-.Payment {
-  margin: 10px !important;
-  width: 310px;
-  background-color: hsl(195, 14%, 95%);
-  border-radius: 10px;
-}
-
-.bills,
-.form {
-  height: 50%;
-}
-.Payment_side_bar,
-.bills {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 15px !important;
-}
-.form_inputs {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  gap: 1rem;
-}
-input {
-  width: 30px;
-} 
-/* .sidebar_container {
-  position: relative;
-  height: fit-content !important;
-  overflow-y: auto;
-  overflow-x: hidden;
-  z-index: 3;
-  background-color: #0085ff !important;
-  color: white;
-}
-.sidebar_container:hover {
-  background-color: aliceblue;
-} 
-
-.fa-circle-user {
+.icon {
   font-size: 30px;
   color: white;
-  float: right;
-} */
-/* */
+}
+
+.set_margin {
+  margin: 20px !important;
+}
+
+a:hover {
+  color: black !important;
+}

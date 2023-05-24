@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import "./Banner.css";
 import { SideBar } from "./Sidebar";
 import { NavBar } from "./Navbar";
 import Table from "react-bootstrap/Table";
@@ -51,8 +50,8 @@ function Banner() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const handeleDelete = id => {
-    const filteredData = banner.filter(i => {
+  const handeleDelete = (id) => {
+    const filteredData = banner.filter((i) => {
       return i !== id;
     });
     setBanner(filteredData);
@@ -61,13 +60,13 @@ function Banner() {
   return (
     <>
       <div className="row">
-        <div className="col-md-2 sidebar_container">
+        <div className="col-md-2 ">
           <SideBar />
         </div>
-        <div className="col-md-10 Navabr_container">
+        <div className="col-md-10 ">
           <NavBar />
 
-          <div className="product_container banner_container">
+          <div className="row  set_margin" >
             <Modal
               show={show}
               onHide={handleClose}
@@ -79,7 +78,7 @@ function Banner() {
                 <Modal.Title>Modal heading</Modal.Title>
               </Modal.Header>
               <Modal.Body>
-                Woohoo, you are reading this text in a modal!
+               <input type="file" />
               </Modal.Body>
               <Modal.Footer>
                 <Button variant="secondary" onClick={handleClose}>
@@ -90,21 +89,16 @@ function Banner() {
                 </Button>
               </Modal.Footer>
             </Modal>
-           
-            <div className="row justify-content-end">
+
+            <div className="row  justify-content-end ">
               <div className="col-md-2">
-              <Button
-                variant="primary"
-                onClick={handleShow}
-              >
-                Add Banner
-              </Button>
+                <Button variant="primary" onClick={handleShow}>
+                  Add Banner
+                </Button>
               </div>
-            
             </div>
-         
-            <div className="row m-auto justify-content-center ">
-         
+
+            <div className="row  justify-content-center ">
               <div className="col-md-8">
                 <Table
                   className="table_container"
@@ -127,7 +121,7 @@ function Banner() {
                           <td>{element["SI.No"]}</td>
                           <td>
                             <img
-                              className="banner_img"
+                              className="header_logo"
                               src={element.img}
                               alt=""
                             />

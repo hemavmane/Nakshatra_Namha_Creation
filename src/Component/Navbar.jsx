@@ -11,8 +11,10 @@ export function NavBar() {
             alt=""
           />
         </div>
-        <div className="col-md-1">
-          <i class="fa-solid fa-circle-user"></i>
+        <div className="col-md-1 ">
+          <Link to='/Admin'>
+          <i class="fa-solid fa-circle-user icon float-right "></i></Link>
+        
         </div>
       </div>
     </>
